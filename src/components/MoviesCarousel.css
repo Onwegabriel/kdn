@@ -1,0 +1,23 @@
+/* src/components/MovieCarousel.css */
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+    margin: 0 10px; /* Space between items */
+    text-align: center; /* Center text below images */
+  }
+  
+  .carousel-image {
+    width: 150px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Round the corners */
+  }
+  
+  /* Add any additional styles for responsiveness or layout here */
+  

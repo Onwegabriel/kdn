@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  /* background-color: #e0f7fa; Light Cyan */
+  /* background-color: #ffe5b4; Light Peach */
+
+
+
 }
 
 .App-logo {
@@ -14,7 +20,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #ffe5b4; /* Light Peach */
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +43,177 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* src/App.css */
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.carousel-item {
+  min-width: 200px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.App {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  margin-top: 10px;
+}
+
+.login-button,
+.signup-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px 0; /* Space between buttons */
+}
+
+/* .login-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.signup-button {
+  background-color: #282aa7;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.signup-button:hover {
+  background-color: #218838;
+} */
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .mobile-menu {
+      display: none; /* Hide the mobile menu on larger screens */
+  }
+}
+
+.search-container {
+  display: flex;
+  justify-content: center; /* Center the search bar */
+  margin: 20px 0; /* Add some spacing */
+}
+
+.search-input {
+  width: 100%; /* Set the input to take full width of its container */
+  max-width: 400px; /* Set a maximum width */
+  padding: 10px; /* Add some padding */
+  font-size: 16px; /* Increase font size */
+  border: 2px solid #007bff; /* Add a border */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove outline on focus */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.search-input::placeholder {
+  color: #aaa; /* Placeholder color */
+}
+
+.search-input:focus {
+  border-color: #0056b3; /* Change border color on focus */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .search-container {
+      margin: 10px; /* Reduce margin for smaller screens */
+  }
+
+  .search-input {
+      max-width: 90%; /* Allow the input to take more width on smaller screens */
+  }
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Adds some space between buttons */
+}
+
+/* Hide the buttons on mobile */
+@media (max-width: 768px) {
+  .button-container {
+    display: none; /* Hide buttons on mobile */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu on mobile */
+  }
+}
+
+/* Show buttons on desktop */
+@media (min-width: 769px) {
+  .hamburger-menu {
+    display: none; /* Hide hamburger menu on desktop */
+  }
+}
+
+.categories-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: center; /* Center the categories */
+}
+
+.category {
+  margin: 10px;
+  width: 150px; /* Fixed width for categories */
+  flex: 1 1 150px; /* Grow, shrink, and base width */
+  position: relative; /* For absolute positioning of image */
+}
+
+.category img {
+  width: 100%; /* Make image responsive */
+  border-radius: 8px; /* Round corners of images */
+}
+
+.category h3 {
+  position: absolute; /* Position text over the image */
+  bottom: 10px; /* Place at the bottom of the image */
+  left: 50%;
+  transform: translateX(-50%); /* Center the text */
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 5px;
+  border-radius: 4px; /* Round corners of text background */
 }

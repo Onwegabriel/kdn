@@ -1,0 +1,75 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Start hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for opacity and visibility */
+  }
+  
+  .modal-overlay.show {
+    opacity: 1; /* Show modal */
+    visibility: visible; /* Show modal */
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .modal h2 {
+    margin: 0 0 15px;
+  }
+  
+  .modal label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .modal input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+  }
+  
+  .signup-button, .cancel-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signup-button {
+    background-color: #2613d3; /* Green background */
+    color: white; /* White text */
+  }
+  
+  .cancel-button {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+  }
+  
+  .signup-button:hover {
+    background-color: #b8bb18; /* Darker green on hover */
+  }
+  
+  .cancel-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+  }
+  
