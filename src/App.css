@@ -51,11 +51,11 @@
   overflow-x: scroll;
 }
 
-.carousel-item {
+/*.carousel-item {
   min-width: 200px;
   margin-right: 10px;
   text-align: center;
-}
+}*/
 
 .movie-image {
   width: 100%;
