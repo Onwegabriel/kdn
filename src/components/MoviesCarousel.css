@@ -19,5 +19,8 @@
     border-radius: 8px; /* Round the corners */
   }
   
+  .movie-title{
+    display: none;
+  }
   /* Add any additional styles for responsiveness or layout here */
   

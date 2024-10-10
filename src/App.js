@@ -9,6 +9,7 @@ import movies from './Movies';
 import LoginModal from './components/LoginModal';
 import SignupModal from './components/SignupModal';
 import categories from './Categories';
+import tvseries from './Tvseries';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const App = () => {
@@ -71,7 +72,7 @@ return (
         </div>
       )}
     </div>
-
+    <br/>
     {searchQuery && filteredMovies.length === 0 && (
       <p>No results found</p>
     )}
@@ -85,6 +86,18 @@ return (
             <div className="category" key={category.id}>
               <img src={category.image} alt={category.name} />
               <h3>{category.name}</h3>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="categories-section">
+        <h2>Tv Series</h2>
+        <div className="categories">
+          {tvseries.map((tvserie) => (
+            <div className="category" key={tvserie.id}>
+              <img src={tvserie.image} alt={tvserie.name} />
+              <h3>{tvserie.name}</h3>
             </div>
           ))}
         </div>

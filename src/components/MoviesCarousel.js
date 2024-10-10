@@ -19,8 +19,8 @@ const MovieCarousel = ({ movies }) => {
       {displayedMovies.map((movie) => (
         <div className="carousel-item" key={movie.id}>
           <img src={movie.image} alt={movie.title} className="movie-image" />
-          <h3>{movie.title}</h3>
-          <p>{movie.genre}</p>
+          <h3 className="movie-title">{movie.title}</h3>
+          <p className="movie-title">{movie.genre}</p>
         </div>
       ))}
     </Slider>
